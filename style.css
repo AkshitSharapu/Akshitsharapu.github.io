@@ -495,3 +495,158 @@ ul li a:hover {
     opacity: 0.6;
     color: white;
 }
+
+/* -------------------------------------------------------
+   RESPONSIVE DESIGN FOR MOBILE & TABLET
+-------------------------------------------------------- */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+
+    .menu-bar {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .pp {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-section {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .skills-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-grid {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .docker-card {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .social-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* -------------------------------------------------------
+   MOBILE VERSION (below 600px)
+-------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Menu Bar */
+    .menu-bar {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .list li {
+        margin-right: 15px;
+    }
+
+    .pp {
+        width: 280px;
+        height: 280px;
+        margin-top: 120px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* About section */
+    .about-section {
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    .about-title {
+        font-size: 32px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .docker-card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+    /* Contact */
+    .contact-container {
+        text-align: center;
+    }
+
+    .contact-text {
+        width: 100%;
+    }
+
+    .social-links {
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-socials a img {
+        width: 28px;
+    }
+}
+
